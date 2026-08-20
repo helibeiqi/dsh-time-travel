@@ -1,0 +1,8 @@
+# dsh-time-travel bundle patch：将插件行插入目标 profile 的插件清单。
+#
+# 语义（cordis-plugin-include）：顶层 `- insert:` 对象向现有条目列表 APPEND 新条目；
+# 裸 `- {id, name}` 对象是 OVERRIDE（id 不存在时报 "patch: entry X not found"）。
+# 本插件是全新条目，必须使用 insert 形式。
+- insert:
+    - id: time-travel
+      name: 'dsh-time-travel'
