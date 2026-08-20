@@ -1,0 +1,36 @@
+{
+  "name": "dsh-time-travel",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness (DSH) 插件：可逆时间旅行与审计。为工具副作用建立「前状态快照 → 执行 → 补偿」链路，提供 rewindTo(turnId) 按轮次倒序恢复工作区，内置审计规则引擎。",
+  "type": "module",
+  "main": "lib/src/index.js",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE",
+    "cordis.yml"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "node --test \"lib/test/**/*.test.js\""
+  },
+  "dependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.yml"
+    }
+  }
+}
