@@ -71,6 +71,7 @@ export const Config = Schema.object({
     edit: 'fs-write',
     delete: 'fs-delete',
     bash: 'bash',
+    pwsh: 'bash', // Windows 上 dsh 的 bash 工具实际注册名为 pwsh（PowerShell）
     'http.request': 'http',
   }),
   /** 内存中保留的最大记录数（超出丢弃最旧，审计日志不受影响）。 */
