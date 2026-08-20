@@ -1,0 +1,14 @@
+# 依赖与构建产物
+node_modules/
+lib/
+
+# 打包产物
+*.tgz
+
+# 运行时产物（审计日志等）
+audit-log.jsonl
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+*.log
