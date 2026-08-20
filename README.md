@@ -49,6 +49,7 @@ npm pack && cd ~/.dsh/profiles/web && npm install /absolute/path/to/dsh-time-tra
 | `write` / `edit` | `fs-write` | ✅ 恢复原内容 / 删除新建 |
 | `delete` | `fs-delete` | ✅ 写回原内容 |
 | `bash` | `bash` | ❌ 仅审计 + manual 提示 |
+| `pwsh` | `bash` | ❌ 仅审计（Windows 上 dsh 的 bash 工具实际注册名为 `pwsh`，PowerShell） |
 | `http.request` | `http` | ❌ 仅审计 |
 
 ## 最小使用示例
