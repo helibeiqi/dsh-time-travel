@@ -18,7 +18,9 @@
     "check": "tsc --noEmit",
     "build": "tsc",
     "pretest": "npm run build",
-    "test": "node --test lib/test/basic.test.js"
+    "test": "node --test lib/test/basic.test.js",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
